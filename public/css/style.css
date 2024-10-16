@@ -1,0 +1,144 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f7f9;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ffccff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #ff99ff;
+}
+
+h1 {
+    color: #d5006d;
+}
+
+/* Form Styles */
+form {
+    max-width: 500px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #d5006d;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password'],
+input[type='url'],
+input[type='number'] {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #ff99ff;
+    border-radius: 5px;
+    transition: border 0.3s ease;
+}
+
+input[type='text']:focus,
+input[type='email']:focus,
+input[type='password']:focus,
+input[type='url']:focus,
+input[type='number']:focus {
+    border-color: #d5006d;
+    outline: none;
+}
+
+/* Button Styles */
+button {
+    background-color: #d5006d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #b30052;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #ffccff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #d5006d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Book Styles */
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.books-container {
+    background-color: #fff;
+    border: 1px solid #ff99ff;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.books-container:hover {
+    transform: scale(1.05);
+}
+
+.title {
+    color: #d5006d;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    form {
+        padding: 15px;
+    }
+
+    header,
+    nav {
+        padding: 15px;
+    }
+}

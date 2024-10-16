@@ -18,15 +18,15 @@
             <% books.forEach((book)=> { %>
                 <div class="books-container">
                     <h2 class="title">
-                        <%= book.title %>
+                        Title:<%= book.title %>
                     </h2>
-                    <p class="author">
+                    <p class="author">Author:
                         <%= book.author %>
                     </p>
-                    <p>$
-                       <%= book.price %>
+                    <p class="price">$
+                       Price:<%= book.price %>
                     </p>
-                    <img src="<%= book.image %>" alt="<%= book.title %>">
+                    <img class="image" src="<%= book.image %>" alt="<%= book.title %>">
                     <button class="btn-link">
                         <a href="/api/books/<%= book.id %>">Details</a>
                     </button>
